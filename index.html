@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Etch-A-Sketch</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="javascript.js" defer></script>
+</head>
+<body>
+   <h1 style="font-family: 'VT323', monospace;">Etch-A-Sketch</h1>
+    <div class="buttons">
+        <button class="button-86" onclick= "changeColor('black')">Black</button>
+        <button class="button-gray" onclick= "changeColor('gray')">Gray</button>
+        <button class="button-eraser" onclick= "changeColor('white')">Eraser</button>
+        <button class="button-random" onclick= "changeColor('random')">Random</button>
+        <button class="button-reset" onclick= "resetBoard()">Reset</button>
+    </div>
+    <div class="board"></div>
+    <div>
+        <input type="text" placeholder="Size of Board" value="16" onchange= "changeSize(this.value)"/>
+        <button class="button-set">Set Size</button>
+    </div>
+</body>
+</html>
