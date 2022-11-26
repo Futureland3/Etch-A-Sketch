@@ -368,3 +368,22 @@ input {
   font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 
 }
+
+.footer {
+  display: flex;
+  gap:10px;
+  font-size:20px;
+  align-items: center;
+}
+
+#logo {
+  width: 30px;
+  height: auto;
+  display: flex;
+  align-items: center;
+  transition: transform 0.3s ease-in-out;
+}
+
+#logo:hover {
+  transform: rotate(360deg) scale(1.2);
+}
